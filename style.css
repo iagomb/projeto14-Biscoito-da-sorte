@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+main h1{
+    color: #34355B;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;   
+}
+
+.screen1 p{
+    color: #34355B;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cookie {
+    width: 100%;
+    height: 19.1rem;
+    background: url(./img/biscoito.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 2.64rem;
+}
+
+.cookie:hover{
+    animation: nervoso .1s ease-in-out infinite ;
+}
+
+@keyframes nervoso {
+    0%{
+        /* background-position: 0% 50%; */
+        transform: translate(-3px, 3px);
+        
+    }
+
+    50%{
+        /* background-position: 100% 50%; */
+        /* transform: translateY(-8px); */
+        transform: translate(3px, 3px);
+        transform: rotate(-2deg);
+        
+    }
+
+    100%{
+        /* background-position: 0% 50%; */
+        /* transform: translate(-3px, -3px); */
+        transform: translate(-3px, -3px);
+        transform: rotate(2deg);
+    }
+
+}
+
+.hide{
+    display: none;
+}
+
+/* screen2 */
+
+.screen2 p{
+    color: #000;
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+   
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    margin-top: 1.7rem;
+
+    animation: up 1s linear backwards;
+}
+
+.opened-cookie{
+    width: 30rem;
+    height: 11.4rem;
+    display: block;
+    background: url(./img/opened-cookie.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-block: 6rem;
+
+}
+
+button{
+    display: flex;
+    margin: 0 auto;
+    padding: 1.6rem;
+    border-radius: 0.4rem;
+    background: #FF9500;
+    border: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@keyframes up {
+    0%{
+        opacity: 0;
+        scale: .4;
+        transform: translateY(300px);
+    }
+}
