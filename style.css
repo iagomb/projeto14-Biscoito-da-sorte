@@ -133,6 +133,11 @@ button{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: background .3s;
+}
+
+button:hover{
+    background: #df8302;
 }
 
 @keyframes up {
